@@ -1,0 +1,3 @@
+[submodule "coursecompass-fetch"]
+	path = coursecompass-fetch
+	url = git@github.com:yasuo-ozu/coursecompass-fetch.git
