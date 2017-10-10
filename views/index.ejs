@@ -1,0 +1,7 @@
+<%# vim: set ft=html 
+%><%- include('./parts/header', {title: "this is title"}) %>
+<h1>Welcome to Course Compass!!</h1>
+<form action="/search" method="GET">
+	<input type="text" name="q">
+	<input type="submit" value="Search">
+</form> <%- include('./parts/footer') %>

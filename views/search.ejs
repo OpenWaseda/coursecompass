@@ -1,0 +1,15 @@
+<%# vim: set ft=html 
+%><%- include('./parts/header', {title: "Search results for " + q }); %>
+<h1>Search results for <%= q %></h1>
+<form action="/search" method="GET">
+	<input type="text" name="q">
+	<input type="submit" value="Search">
+</form>
+<% if (results.length == 0) { %>
+<p>No match.</p>
+<% } else {
+	for (let item of results) { %>
+		<p><a href="<%= item.url %>" target="_blank"><%= item.courseTitle %></a></p>
+
+<% } } %>
+<%- include('./parts/footer'); %>
